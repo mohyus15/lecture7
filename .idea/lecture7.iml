@@ -17,5 +17,15 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:3.23.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.bytebuddy:byte-buddy:1.12.10" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:12.0.0.alpha1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:12.0.0.alpha1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:12.0.0.alpha1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:12.0.0.alpha1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty:6.1.25" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-util:6.1.25" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings:3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:2.0.4" level="project" />
   </component>
 </module>
