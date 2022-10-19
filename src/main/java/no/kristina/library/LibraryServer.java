@@ -18,4 +18,8 @@ public class LibraryServer {
     public URL getURL() throws MalformedURLException {
         return server.getURI().toURL();
     }
+
+    public void start() throws Exception {
+        server.start();
+    }
 }
