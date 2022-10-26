@@ -13,8 +13,8 @@ class LibraryServerTest {
     void shoudShowFrontPage() throws Exception {
         var server  = new LibraryServer(0);
         server.start();
-        var con = (HttpURLConnection)server.getURL().openConnection();
-        assertThat(con.getResponseCode()).isEqualTo(200);
-       assertThat(con.getErrorStream()).asString(StandardCharsets.UTF_8).contains("<title>kristania Library</title>");
+        var connection = (HttpURLConnection)server.getURL().openConnection();
+        assertThat(connection.getResponseCode()).isEqualTo(200);
+        assertThat(connection.getInputStream()).asString(StandardCharsets.UTF_8).contains("<title>kristina library</title>");
     }
 }
