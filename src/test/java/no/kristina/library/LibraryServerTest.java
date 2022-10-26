@@ -21,12 +21,18 @@ class LibraryServerTest {
 
     @Test
     void shoudShowFrontPage() throws IOException {
-        var connection = getOpenConnection();
+        var connection = openConnection();
         assertThat(connection.getResponseCode()).isEqualTo(200);
         assertThat(connection.getInputStream()).asString(StandardCharsets.UTF_8).contains("<title>kristina library</title>");
     }
+    @Test
+    void shoudShowdynamicContent() throws IOException {
+        var connection = openConnection('/api/books');
+        assertThat(connection.getResponseCode()).isEqualTo(200);
+        assertThat(connection.getInputStream()).asString(StandardCharsets.UTF_8).contains("[{\"title\":\"Hello World\"");
+    }
 
-    private HttpURLConnection getOpenConnection() throws IOException {
+    private HttpURLConnection openConnection() throws IOException {
         return (HttpURLConnection) server.getURL().openConnection();
     }
 }
